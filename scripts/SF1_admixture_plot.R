@@ -25,7 +25,7 @@ qfiles <- list.files(path = "data/",pattern = "admixture",full.names = T)
 slist<-readQ(file=qfiles[c(7:13,1:6)],filetype="basic")                     # automatically detects input filetype
 
 # create labels in the same order as the cluster file
-fam<-read.table("data/SF1_admxiture_samples.txt",h=T,sep="\t",stringsAsFactors = F)
+fam<-read.table("data/admixture_samples.txt",h=T,sep="\t",stringsAsFactors = F)
 
 #rename
 fam$super_pop<-ifelse(fam$super_pop=="Equatorial-Tucanoan" | fam$super_pop=="Ge-Pano-Carib","Southern\nAmerindian",fam$super_pop)
