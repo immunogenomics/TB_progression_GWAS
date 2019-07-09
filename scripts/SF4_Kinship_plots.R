@@ -1,11 +1,11 @@
 ######REAP Estimate ######
 
-reap<-scan("data/reap_kinship.txt",as.numeric())
+reap<-scan("data/reap_kinship.txt.gz",as.numeric())
 
 
 #######PLINK Estimate#####
 
-plink<-scan("data/plink_kinship.txt",as.numeric())
+plink<-scan("data/plink_kinship.txt.gz",as.numeric())
 
 #####PLINK vs REAP ###
 png("figures/SF4_plink-vs-reap-kinship.png",width=1000,height=800)
